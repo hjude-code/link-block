@@ -20,10 +20,22 @@
 	border-color: var(--wp--preset--color--contrast);
 	width: 2.5rem;
 	flex-grow: 0;
+	transition: padding 0.5s cubic-bezier(.97,-0.27,.42,1.32);
+}
+.wp-block-link-block-link-block:hover a .IconBar{
+	padding-top: 50%;
+	transition: padding 0.5s cubic-bezier(.51,0,.03,1.28);
 }
 .wp-block-link-block-link-block a .IconBar img{
 	max-width: 100%;
+	transform: rotate(0deg);
+	transform-origin: center;
 	aspect-ratio: 1/1 !important;
+	transition: transform 0.5s cubic-bezier(.97,-0.27,.42,1.32);
+}
+.wp-block-link-block-link-block:hover a .IconBar img{
+	transform: rotate(360deg);
+	transition: transform 0.5s cubic-bezier(.51,0,.03,1.28);
 }
 .wp-block-link-block-link-block a .BlockCopy{
 	grid-column: auto/span 4;
