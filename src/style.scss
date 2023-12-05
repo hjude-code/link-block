@@ -20,6 +20,7 @@
 	border-color: var(--wp--preset--color--contrast);
 	width: 2.5rem;
 	flex-grow: 0;
+	flex-shrink: 0;
 	transition: padding 0.5s cubic-bezier(.97,-0.27,.42,1.32);
 }
 .wp-block-link-block-link-block:hover a .IconBar{
@@ -44,8 +45,19 @@
 	flex-direction: column;
 	-webkit-flex-direction:column;
 	gap:var(--wp--preset--spacing--40);
+	flex-grow: 1;
 }
 .wp-block-link-block-link-block a .BlockCopy *{
 	margin: 0px;
+}
+
+@media screen and (max-width:768px) {
+	.wp-block-link-block-link-block a{
+		flex-direction:row-reverse;
+	}
+}
+
+@media screen and (min-width:768px) {
+	
 }
 
