@@ -11,7 +11,8 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, RichText, InnerBlocks, InspectorControls} from '@wordpress/block-editor';
+import { Panel, PanelBody, PanelRow, TextControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,10 +30,32 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-export default function Edit() {
+export default function Edit(props) {
+
+	const {
+		attributes:{Icon, Link, Headline, Location},
+		setAttributes,
+		className
+	} = props;
+
+	const blockProps = useBlockProps();
+
 	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Link-block – hello from the editor!', 'link-block' ) }
-		</p>
+		<div { ...useBlockProps() }>
+			<a src={Link}>
+				<div class="IconBar">
+					<img src={Icon}/>
+				</div>
+					<RichText
+					tagName='h3'
+					value={Headline}
+					/>
+					<RichText
+					tagName='h4'
+					value={Location}
+					/>
+
+			</a>
+		</div>
 	);
 }

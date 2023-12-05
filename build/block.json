@@ -12,7 +12,8 @@
   },
   "attributes": {
     "Icon": {
-      "type": "string"
+      "type": "string",
+      "default": "#"
     },
     "Headline": {
       "type": "string",
@@ -22,7 +23,7 @@
       "type": "string",
       "default": "Somewhere or something"
     },
-    "link": {
+    "Link": {
       "type": "string",
       "default": "#"
     }
