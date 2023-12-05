@@ -27,7 +27,7 @@
 			"type":"string",
 			"default":"#"
 		},
-		"BarColor"{
+		"BarColor":{
 			"type":"string",
 			"default":"var(--wp--preset--color--accent)"
 		}
