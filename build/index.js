@@ -71,6 +71,16 @@ function Edit(props) {
       BarColor: newBarColor
     });
   };
+  const onChangeLink = newLink => {
+    setAttributes({
+      Link: newLink
+    });
+  };
+  const onChangeIcon = newIcon => {
+    setAttributes({
+      Icon: newIcon
+    });
+  };
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
   const BarStyle = {
     background: BarColor
@@ -81,6 +91,14 @@ function Edit(props) {
     label: "color",
     value: BarColor,
     onChange: onChangeBarColor
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
+    label: "link",
+    value: Link,
+    onChange: onChangeLink
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextControl, {
+    label: "Icon",
+    value: Icon,
+    onChange: onChangeIcon
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     src: Link
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {

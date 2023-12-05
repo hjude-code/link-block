@@ -35,12 +35,19 @@ export default function Edit(props) {
 	const {
 		attributes:{Icon, Link, Headline, Location, BarColor},
 		setAttributes,
-		className
+		className,
 	} = props;
 
 	const onChangeBarColor = ( newBarColor ) => {
 		setAttributes( { BarColor: newBarColor } );
 	};
+	const onChangeLink = ( newLink ) => {
+		setAttributes( { Link: newLink } );
+	};
+	const onChangeIcon = ( newIcon ) => {
+		setAttributes( { Icon: newIcon } );
+	};
+
 
 	const blockProps = useBlockProps();
 
@@ -57,6 +64,20 @@ export default function Edit(props) {
 							label="color"
 							value={BarColor}
 							onChange={onChangeBarColor}
+						/>
+					</PanelRow>
+					<PanelRow>
+						<TextControl
+							label="link"
+							value={Link}
+							onChange={onChangeLink}
+						/>
+					</PanelRow>
+					<PanelRow>
+						<TextControl
+							label="Icon"
+							value={Icon}
+							onChange={onChangeIcon}
 						/>
 					</PanelRow>
 				</PanelBody>

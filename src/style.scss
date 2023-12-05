@@ -6,8 +6,8 @@
  */
 
 .wp-block-link-block-link-block a{
-	display: grid;
-	grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+	display: flex;
+	display: -webkit-flex;
 }
 .wp-block-link-block-link-block a>div{
 	padding: var(--wp--preset--spacing--20);
@@ -18,6 +18,12 @@
 	border-width: 0px 2px 0px 0px;
 	border-style: solid;
 	border-color: var(--wp--preset--color--contrast);
+	width: 2.5rem;
+	flex-grow: 0;
+}
+.wp-block-link-block-link-block a .IconBar img{
+	max-width: 100%;
+	aspect-ratio: 1/1 !important;
 }
 .wp-block-link-block-link-block a .BlockCopy{
 	grid-column: auto/span 4;
