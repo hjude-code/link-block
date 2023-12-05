@@ -8,6 +8,10 @@
 .wp-block-link-block-link-block a{
 	display: flex;
 	display: -webkit-flex;
+	text-decoration: none !important;
+}
+.wp-block-link-block-link-block a:hover{
+	text-decoration: none !important;
 }
 .wp-block-link-block-link-block a>div{
 	padding: var(--wp--preset--spacing--20);
