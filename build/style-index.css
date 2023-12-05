@@ -46,6 +46,14 @@
 
 .wp-block-link-block-link-block a .BlockCopy {
   grid-column: auto/span 4;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  gap: var(--wp--preset--spacing--40);
+}
+
+.wp-block-link-block-link-block a .BlockCopy * {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
