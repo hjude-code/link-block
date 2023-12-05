@@ -26,6 +26,10 @@
 		"Link":{
 			"type":"string",
 			"default":"#"
+		},
+		"BarColor"{
+			"type":"string",
+			"default":"var(--wp--preset--color--accent)"
 		}
 	},
 	"textdomain": "link-block",
