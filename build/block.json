@@ -10,6 +10,23 @@
   "supports": {
     "html": false
   },
+  "attributes": {
+    "Icon": {
+      "type": "string"
+    },
+    "Headline": {
+      "type": "string",
+      "default": "Doing something"
+    },
+    "Location": {
+      "type": "string",
+      "default": "Somewhere or something"
+    },
+    "link": {
+      "type": "string",
+      "default": "#"
+    }
+  },
   "textdomain": "link-block",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",

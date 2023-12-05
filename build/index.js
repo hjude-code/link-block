@@ -177,7 +177,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"link-block/link-block","version":"0.1.0","title":"Link-block","category":"widgets","icon":"smiley","example":{},"supports":{"html":false},"textdomain":"link-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"link-block/link-block","version":"0.1.0","title":"Link-block","category":"widgets","icon":"smiley","example":{},"supports":{"html":false},"attributes":{"Icon":{"type":"string"},"Headline":{"type":"string","default":"Doing something"},"Location":{"type":"string","default":"Somewhere or something"},"link":{"type":"string","default":"#"}},"textdomain":"link-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 
