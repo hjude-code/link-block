@@ -9,7 +9,7 @@
 
 ?>
 <div <?php echo get_block_wrapper_attributes(); ?>>
-	<a <?php echo($BlockLink); ?> >
+	<a <?php echo($BlockLink); ?> target="_blank" >
 		<div class="IconBar" style="<?php echo($BarStyle); ?>">
 			<img <?php echo($IconURL); ?>>
 		</div>

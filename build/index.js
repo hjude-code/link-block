@@ -81,6 +81,16 @@ function Edit(props) {
       Icon: newIcon
     });
   };
+  const onChangeHeadline = newHeadline => {
+    setAttributes({
+      Headline: newHeadline
+    });
+  };
+  const onChangeLocation = newLocation => {
+    setAttributes({
+      Location: newLocation
+    });
+  };
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
   const BarStyle = {
     background: BarColor
@@ -99,9 +109,7 @@ function Edit(props) {
     label: "Icon",
     value: Icon,
     onChange: onChangeIcon
-  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    src: Link
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "IconBar",
     style: BarStyle
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
@@ -110,10 +118,12 @@ function Edit(props) {
     class: "BlockCopy"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     tagName: "h3",
-    value: Headline
+    value: Headline,
+    onChange: onChangeHeadline
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     tagName: "h4",
-    value: Location
+    value: Location,
+    onChange: onChangeLocation
   }))));
 }
 

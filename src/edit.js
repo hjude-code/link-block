@@ -47,6 +47,12 @@ export default function Edit(props) {
 	const onChangeIcon = ( newIcon ) => {
 		setAttributes( { Icon: newIcon } );
 	};
+	const onChangeHeadline = ( newHeadline ) => {
+		setAttributes( { Headline: newHeadline } );
+	};
+	const onChangeLocation = ( newLocation ) => {
+		setAttributes( { Location: newLocation } );
+	};
 
 
 	const blockProps = useBlockProps();
@@ -82,7 +88,7 @@ export default function Edit(props) {
 					</PanelRow>
 				</PanelBody>
 			</InspectorControls>
-			<a src={Link}>
+			<a>
 				<div class="IconBar" style={BarStyle}>
 					<img src={Icon}/>
 				</div>
@@ -90,10 +96,12 @@ export default function Edit(props) {
 					<RichText
 					tagName='h3'
 					value={Headline}
+					onChange={onChangeHeadline}
 					/>
 					<RichText
 					tagName='h4'
 					value={Location}
+					onChange={onChangeLocation}
 					/>
 				</div>
 			</a>
