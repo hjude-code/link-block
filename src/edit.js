@@ -12,7 +12,7 @@ import { __ } from '@wordpress/i18n';
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 import { useBlockProps, RichText, InnerBlocks, InspectorControls} from '@wordpress/block-editor';
-import { Panel, PanelBody, PanelRow, TextControl } from '@wordpress/components';
+import { Panel, PanelBody, PanelRow, TextControl, GradientPicker } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -33,17 +33,36 @@ import './editor.scss';
 export default function Edit(props) {
 
 	const {
-		attributes:{Icon, Link, Headline, Location},
+		attributes:{Icon, Link, Headline, Location, BarColor},
 		setAttributes,
 		className
 	} = props;
 
+	const onChangeBarColor = ( newBarColor ) => {
+		setAttributes( { BarColor: newBarColor } );
+	};
+
 	const blockProps = useBlockProps();
+
+	const BarStyle={
+		background: BarColor
+	}
 
 	return (
 		<div { ...useBlockProps() }>
+			<InspectorControls>
+				<PanelBody>
+					<PanelRow>
+						<GradientPicker
+							label="color"
+							value={BarColor}
+							onChange={onChangeBarColor}
+						/>
+					</PanelRow>
+				</PanelBody>
+			</InspectorControls>
 			<a src={Link}>
-				<div class="IconBar">
+				<div class="IconBar" style={BarStyle}>
 					<img src={Icon}/>
 				</div>
 				<div class="BlockCopy">

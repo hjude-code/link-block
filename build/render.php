@@ -5,11 +5,12 @@
 
  $IconURL = "src=".$attributes['Icon'];
  $BlockLink = "href=".$attributes['Link'];
+ $BarStyle = "background:".$attributes['BarColor'].";";
 
 ?>
 <div <?php echo get_block_wrapper_attributes(); ?>>
 	<a <?php echo($BlockLink); ?> >
-		<div class="IconBar">
+		<div class="IconBar" style="<?php echo($BarStyle); ?>">
 			<img <?php echo($IconURL); ?>>
 		</div>
 		<div class="BlockCopy">

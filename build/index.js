@@ -60,18 +60,32 @@ function Edit(props) {
       Icon,
       Link,
       Headline,
-      Location
+      Location,
+      BarColor
     },
     setAttributes,
     className
   } = props;
+  const onChangeBarColor = newBarColor => {
+    setAttributes({
+      BarColor: newBarColor
+    });
+  };
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
+  const BarStyle = {
+    background: BarColor
+  };
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.GradientPicker, {
+    label: "color",
+    value: BarColor,
+    onChange: onChangeBarColor
+  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     src: Link
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "IconBar"
+    class: "IconBar",
+    style: BarStyle
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: Icon
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -215,7 +229,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"link-block/link-block","version":"0.1.0","title":"Link-block","category":"widgets","icon":"smiley","example":{},"supports":{"html":false},"attributes":{"Icon":{"type":"string","default":"#"},"Headline":{"type":"string","default":"Doing something"},"Location":{"type":"string","default":"Somewhere or something"},"Link":{"type":"string","default":"#"}},"textdomain":"link-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"link-block/link-block","version":"0.1.0","title":"Link-block","category":"widgets","icon":"smiley","example":{},"supports":{"html":false},"attributes":{"Icon":{"type":"string","default":"#"},"Headline":{"type":"string","default":"Doing something"},"Location":{"type":"string","default":"Somewhere or something"},"Link":{"type":"string","default":"#"},"BarColor":{"type":"string","default":"var(--wp--preset--color--accent)"}},"textdomain":"link-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 
