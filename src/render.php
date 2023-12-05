@@ -12,11 +12,13 @@
 		<div class="IconBar">
 			<img <?php echo($IconURL); ?>>
 		</div>
-		<h3>
-		<?php echo($attributes['Headline']); ?>
-		</h3>
-		<h3>
-		<?php echo($attributes['Location']); ?>
-		</h3>
+		<div class="BlockCopy">
+			<h3>
+				<?php echo($attributes['Headline']); ?>
+			</h3>
+			<h4>
+				<?php echo($attributes['Location']); ?>
+			</h3>
+		</div>
 	</a>
 </div>

@@ -46,6 +46,7 @@ export default function Edit(props) {
 				<div class="IconBar">
 					<img src={Icon}/>
 				</div>
+				<div class="BlockCopy">
 					<RichText
 					tagName='h3'
 					value={Headline}
@@ -54,7 +55,7 @@ export default function Edit(props) {
 					tagName='h4'
 					value={Location}
 					/>
-
+				</div>
 			</a>
 		</div>
 	);

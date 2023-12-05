@@ -5,8 +5,20 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-link-block-link-block {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.wp-block-link-block-link-block a{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+}
+.wp-block-link-block-link-block a>div{
+	padding: var(--wp--preset--spacing--20);
+}
+.wp-block-link-block-link-block a .IconBar{
+	grid-column: 1/span 1;
+	background-color:var(--wp--preset--color--accent);
+	border-width: 0px 2px 0px 0px;
+	border-style: solid;
+	border-color: var(--wp--preset--color--contrast);
+}
+.wp-block-link-block-link-block a .BlockCopy{
+	grid-column: auto/span 4;
 }
