@@ -7,10 +7,15 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-link-block-link-block {
+  height: 100%;
+}
+
 .wp-block-link-block-link-block a {
   display: flex;
   display: -webkit-flex;
   text-decoration: none !important;
+  height: 100%;
 }
 
 .wp-block-link-block-link-block a:hover {
@@ -23,7 +28,7 @@
 
 .wp-block-link-block-link-block a .IconBar {
   grid-column: 1/span 1;
-  border-width: 0px 2px 0px 0px;
+  border-width: 0px 1px 0px 0px;
   border-style: solid;
   border-color: var(--wp--preset--color--contrast);
   width: 2.5rem;
@@ -59,6 +64,8 @@
   flex-direction: column;
   gap: var(--wp--preset--spacing--40);
   flex-grow: 1;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
 }
 
 .wp-block-link-block-link-block a .BlockCopy * {
@@ -68,6 +75,9 @@
 @media screen and (max-width: 768px) {
   .wp-block-link-block-link-block a {
     flex-direction: row-reverse;
+  }
+  .wp-block-link-block-link-block a .IconBar {
+    border-width: 0px 0px 0px 1px;
   }
 }
 
