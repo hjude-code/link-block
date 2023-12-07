@@ -33,7 +33,6 @@
 }
 
 .wp-block-link-block-link-block:hover a .IconBar {
-  padding-top: 50%;
   transition: padding 0.5s cubic-bezier(0.51, 0, 0.03, 1.28);
 }
 
@@ -42,12 +41,15 @@
   transform: rotate(0deg);
   transform-origin: center;
   aspect-ratio: 1/1 !important;
-  transition: transform 0.5s cubic-bezier(0.97, -0.27, 0.42, 1.32);
+  transition: transform 0.5s cubic-bezier(0.97, -0.27, 0.42, 1.32), top 0.5s cubic-bezier(0.97, -0.27, 0.42, 1.32);
+  position: relative;
+  top: 0%;
 }
 
 .wp-block-link-block-link-block:hover a .IconBar img {
+  top: 50%;
   transform: rotate(360deg);
-  transition: transform 0.5s cubic-bezier(0.51, 0, 0.03, 1.28);
+  transition: transform 0.5s cubic-bezier(0.51, 0, 0.03, 1.28), top 0.5s cubic-bezier(0.51, 0, 0.03, 1.28);
 }
 
 .wp-block-link-block-link-block a .BlockCopy {
