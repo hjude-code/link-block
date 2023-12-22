@@ -22,10 +22,6 @@
   text-decoration: none !important;
 }
 
-.wp-block-link-block-link-block a > div {
-  padding: var(--wp--preset--spacing--20);
-}
-
 .wp-block-link-block-link-block a .IconBar {
   grid-column: 1/span 1;
   border-width: 0px 1px 0px 0px;
@@ -35,6 +31,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   transition: padding 0.5s cubic-bezier(0.97, -0.27, 0.42, 1.32);
+  padding: var(--wp--preset--spacing--10);
 }
 
 .wp-block-link-block-link-block:hover a .IconBar {
