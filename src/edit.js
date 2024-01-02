@@ -93,6 +93,8 @@ export default function Edit(props) {
 					<img src={Icon}/>
 				</div>
 				<div class="BlockCopy">
+					<InnerBlocks
+					/>
 					<RichText
 					tagName='h3'
 					value={Headline}

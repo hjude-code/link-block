@@ -14,6 +14,7 @@
 			<img <?php echo($IconURL); ?>>
 		</div>
 		<div class="BlockCopy">
+			<?php echo $content ?>
 			<h3>
 				<?php echo($attributes['Headline']); ?>
 			</h3>
