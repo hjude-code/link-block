@@ -15,12 +15,6 @@
 		</div>
 		<div class="BlockCopy">
 			<?php echo $content ?>
-			<h3>
-				<?php echo($attributes['Headline']); ?>
-			</h3>
-			<h4>
-				<?php echo($attributes['Location']); ?>
-			</h3>
 		</div>
 	</a>
 </div>

@@ -33,7 +33,7 @@ import './editor.scss';
 export default function Edit(props) {
 
 	const {
-		attributes:{Icon, Link, Headline, Location, BarColor},
+		attributes:{Icon, Link, BarColor},
 		setAttributes,
 		className,
 	} = props;
@@ -46,12 +46,6 @@ export default function Edit(props) {
 	};
 	const onChangeIcon = ( newIcon ) => {
 		setAttributes( { Icon: newIcon } );
-	};
-	const onChangeHeadline = ( newHeadline ) => {
-		setAttributes( { Headline: newHeadline } );
-	};
-	const onChangeLocation = ( newLocation ) => {
-		setAttributes( { Location: newLocation } );
 	};
 
 
@@ -94,16 +88,7 @@ export default function Edit(props) {
 				</div>
 				<div class="BlockCopy">
 					<InnerBlocks
-					/>
-					<RichText
-					tagName='h3'
-					value={Headline}
-					onChange={onChangeHeadline}
-					/>
-					<RichText
-					tagName='h4'
-					value={Location}
-					onChange={onChangeLocation}
+					
 					/>
 				</div>
 			</a>

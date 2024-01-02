@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Link-block",
 	"category": "widgets",
-	"icon": "admin-links",
+	"icon": "links",
 	"example": {},
 	"supports": {
 		"html": false
@@ -14,14 +14,6 @@
 		"Icon":{
 			"type":"string",
 			"default":"#"
-		},
-		"Headline":{
-			"type":"string",
-			"default":"Doing something"
-		},
-		"Location":{
-			"type":"string",
-			"default":"Somewhere or something"
 		},
 		"Link":{
 			"type":"string",
