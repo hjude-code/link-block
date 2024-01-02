@@ -257,7 +257,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"link-block/link-block","version":"0.1.0","title":"Link-block","category":"widgets","icon":"smiley","example":{},"supports":{"html":false},"attributes":{"Icon":{"type":"string","default":"#"},"Headline":{"type":"string","default":"Doing something"},"Location":{"type":"string","default":"Somewhere or something"},"Link":{"type":"string","default":"#"},"BarColor":{"type":"string","default":"var(--wp--preset--color--accent)"}},"textdomain":"link-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"link-block/link-block","version":"0.1.0","title":"Link-block","category":"widgets","icon":"admin-links","example":{},"supports":{"html":false},"attributes":{"Icon":{"type":"string","default":"#"},"Headline":{"type":"string","default":"Doing something"},"Location":{"type":"string","default":"Somewhere or something"},"Link":{"type":"string","default":"#"},"BarColor":{"type":"string","default":"var(--wp--preset--color--accent)"}},"textdomain":"link-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

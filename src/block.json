@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Link-block",
 	"category": "widgets",
-	"icon": "smiley",
+	"icon": "admin-links",
 	"example": {},
 	"supports": {
 		"html": false
